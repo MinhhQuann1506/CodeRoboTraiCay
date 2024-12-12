@@ -1,0 +1,90 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 12312 123, 123, LIC=ZB4EI-TYV7U-SBUEJ-U32MR-MQ365-RX0TD
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\Robocon\DonCode4Banh_Ver1_7-12\Robot_2025_H7\MDK-ARM\robot2025H750.uvprojx
+Project File Date:  12/12/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'robot2025H750'
+compiling main.c...
+../Core/Inc/gamepad_bluetooth.h(79): warning:  #177-D: variable "a"  was declared but never referenced
+  	static char a;
+../Core/Inc/4SwerveWheel.h(38): warning:  #1295-D: Deprecated declaration runGrab - give arg types
+  void runGrab();
+../Core/Inc/4SwerveWheel.h(39): warning:  #1295-D: Deprecated declaration stop_rotation - give arg types
+  void stop_rotation();
+../Core/Inc/4SwerveWheel.h(40): warning:  #1-D: last line of file ends without a newline
+  void runAngle(int goc, int tocDoChay, int tocDoXoay);
+../Core/Inc/BasicFunction.h(155): warning:  #223-D: function "en_mamXoay" declared implicitly
+       current2 = en_mamXoay(); // Ð?c giá tr? encoder ban d?u
+../Core/Inc/BasicFunction.h(190): warning:  #223-D: function "en_mamXoay" declared implicitly
+       current = en_mamXoay(); // Ð?c giá tr? encoder ban d?u
+../Core/Inc/BasicFunction.h(636): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      if (x > 0.0) return 1.0;
+../Core/Inc/BasicFunction.h(637): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      else if (x < 0.0) return -1.0;
+../Core/Inc/BasicFunction.h(1043): warning:  #223-D: function "robotRun" declared implicitly
+  		else robotRun(angle, mapToc);
+../Core/Inc/LCD_Shows.h(65): warning:  #175-D: subscript out of range
+  		lcd_printInt(10,2, RX_UART4[9]);
+../Core/Inc/4SwerveWheel.h(38): warning:  #1295-D: Deprecated declaration runGrab - give arg types
+  void runGrab();
+../Core/Inc/4SwerveWheel.h(39): warning:  #1295-D: Deprecated declaration stop_rotation - give arg types
+  void stop_rotation();
+../Core/Inc/4SwerveWheel.h(40): warning:  #1-D: last line of file ends without a newline
+  void runAngle(int goc, int tocDoChay, int tocDoXoay);
+../Core/Src/main.c(259): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  	HAL_UART_Receive_DMA(&huart3, MANG_GAME, 8);		// Khai bao cap nhat mang cho gamePad
+../Core/Src/main.c: 14 warnings, 0 errors
+linking...
+Program Size: Code=44028 RO-data=1280 RW-data=492 ZI-data=23724  
+FromELF: creating hex file...
+"robot2025H750\robot2025H750.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM.CMSIS.6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32H7xx_DFP.3.0.0.pack
+                Keil.STM32H7xx_DFP.3.0.0
+                STMicroelectronics STM32H7 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_robot2025H750
+  C:\Users\MQ15\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include
+  C:\Users\MQ15\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:6.1.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
